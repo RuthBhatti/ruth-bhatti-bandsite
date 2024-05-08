@@ -1,0 +1,105 @@
+// Variables and Mixins
+$primary-font: 'Arial', sans-serif;
+$primary-color: #333;
+$secondary-color: #555;
+
+@mixin responsive-text($size) {
+    font-size: $size;
+
+    @media (min-width: 480px) {
+        font-size: $size * 1.2;
+    }
+}
+
+// Base styles
+body {
+    font-family: $primary-font;
+    color: $primary-color;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+// Header and Navigation
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid $secondary-color;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &__logo {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
+        @include responsive-text(1.5rem);
+    }
+}
+
+// Main content and sections
+.band-info {
+    padding: 1rem;
+
+    &__title {
+        @include responsive-text(2rem);
+    }
+
+    &__description,
+    &__quote {
+        @include responsive-text(1rem);
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+
+    img {
+        width: 100%;
+        max-width: 160px;
+        margin: 0.5rem;
+        transition: filter 0.3s;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+}
+
+.contact {
+    padding: 1rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    background-color: #222;
+    color: #fff;
+}
+
+.hero {
+    background-image: url(/assets/Images/hero-bio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+
+    &__content {
+        max-width: 960px;
+        padding: 20px;
+
+    }
+}
+

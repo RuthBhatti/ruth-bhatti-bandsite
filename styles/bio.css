@@ -1,0 +1,95 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #555;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.nav__logo {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+@media (min-width: 480px) {
+  .nav__logo {
+    font-size: 1.8rem;
+  }
+}
+
+.band-info {
+  padding: 1rem;
+}
+.band-info__title {
+  font-size: 2rem;
+}
+@media (min-width: 480px) {
+  .band-info__title {
+    font-size: 2.4rem;
+  }
+}
+.band-info__description, .band-info__quote {
+  font-size: 1rem;
+}
+@media (min-width: 480px) {
+  .band-info__description, .band-info__quote {
+    font-size: 1.2rem;
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+.gallery img {
+  width: 100%;
+  max-width: 160px;
+  margin: 0.5rem;
+  transition: filter 0.3s;
+}
+.gallery img:hover {
+  filter: grayscale(0%);
+}
+
+.contact {
+  padding: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.hero {
+  background-image: url(/assets/Images/hero-bio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+.hero__content {
+  max-width: 960px;
+  padding: 20px;
+}/*# sourceMappingURL=bio.css.map */
