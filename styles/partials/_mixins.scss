@@ -1,0 +1,12 @@
+// Variables and Mixins
+$primary-font: 'Arial', sans-serif;
+$primary-color: #333;
+$secondary-color: #555;
+
+@mixin responsive-text($size) {
+    font-size: $size;
+
+    @media (min-width: 480px) {
+        font-size: $size * 1.2;
+    }
+}

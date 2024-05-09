@@ -1,0 +1,18 @@
+.hero {
+    background-image: url(/assets/Images/hero-bio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+
+    &__content {
+        max-width: 960px;
+        padding: 20px;
+
+    }
+}

@@ -1,0 +1,19 @@
+// Header and Navigation
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid $secondary-color;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &__logo {
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: bold;
+        @include responsive-text(1.5rem);
+    }
+}
