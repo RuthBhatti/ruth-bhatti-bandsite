@@ -1,8 +1,20 @@
-// Base styles
-body {
-    font-family: $primary-font;
-    color: $primary-color;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+@font-face {
+    font-family: Avenir;
+    src: url('../assets/fonts/AvenirNextLTPro-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
 }
+
+@font-face {
+    font-family: Avenir;
+    src: url(../assets/fonts/AvenirNextLTPro-Demi.otf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+    @font-face {
+        font-family: Avenir;
+        src: url(../assets/fonts/AvenirNextLTPro-Bold.otf);
+        font-style: normal;
+        font-weight: 700;
+    }

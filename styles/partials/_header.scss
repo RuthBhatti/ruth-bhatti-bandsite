@@ -1,9 +1,9 @@
-@use "./partials/mixins" as*;
+@use "./mixins" as*;
 
 // Header and Navigation
 .header {
     background-color: #fff;
-    border-bottom: 1px solid $secondary-color;
+    // border-bottom: 1px solid $secondary-color;
 }
 
 .nav {
