@@ -1,4 +1,6 @@
-// Variables and Mixins
+@use "./media" as *;
+
+//  Mixins
 $primary-font: 'Arial', sans-serif;
 $primary-color: #333;
 $secondary-color: #555;
@@ -8,5 +10,17 @@ $secondary-color: #555;
 
     @media (min-width: 480px) {
         font-size: $size * 1.2;
+    }
+}
+
+@mixin tablet() {
+    @media (min-width:$breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (min-width:$breakpoint-desktop) {
+        @content;
     }
 }

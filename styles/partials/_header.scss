@@ -2,14 +2,17 @@
 
 // Header and Navigation
 .header {
-    background-color: #fff;
+    background-color:#323232;
+    display: column;
     // border-bottom: 1px solid $secondary-color;
 }
-
-.nav {
+.container{
+    padding: 1.5rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+}
+.nav {
+    color: #ffffff;
     padding: 1rem;
     background-color: #323232;
 
@@ -19,4 +22,14 @@
         font-weight: bold;
         @include responsive-text(1.5rem);
     }
+}
+.nav__ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around
+
+}
+.nav__link{
+    color: #ffffff;
+    text-decoration: none;
 }
