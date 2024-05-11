@@ -24,20 +24,53 @@
   text-align: justify;
   padding: 1.5625rem;
   font-size: 0.8rem;
-  background-color: #222;
+  background-color: #323232;
   color: #fff;
 }
 .footer__logo2 {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__logo2 {
     display: block;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .footer__logo1 {
     display: none;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer__social-icons {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer__title {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 48rem) {
+  .icon {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer-info {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -78,7 +111,7 @@
   font-weight: bold;
   font-size: 1.5rem;
 }
-@media (min-width: 480px) {
+@media (min-width: 30rem) {
   .nav__logo {
     font-size: 1.8rem;
   }
@@ -93,6 +126,10 @@
 .nav__link {
   color: #ffffff;
   text-decoration: none;
+  margin: 0 0.625rem;
+}
+.nav__link:hover {
+  text-decoration: underline;
 }
 
 .hero {
@@ -103,7 +140,7 @@
   height: 18rem;
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  padding-left: 1.875rem;
 }
 
 h1 {
@@ -126,6 +163,25 @@ h1 {
 
 .body-text {
   padding: 1.25rem;
+}
+
+.band-info__description {
+  padding: 0.9375rem;
+}
+
+.band-info__quote {
+  padding: 0.9375rem;
+}
+
+.band-info__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.band-info__content .band-info__description {
+  flex: 1;
+  margin: 0 10px;
+  text-align: justify;
 }
 
 body {

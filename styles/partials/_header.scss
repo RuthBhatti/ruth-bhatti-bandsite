@@ -2,19 +2,25 @@
 
 // Header and Navigation
 .header {
-    background-color:#323232;
+    background-color: #323232;
     display: column;
+
     // border-bottom: 1px solid $secondary-color;
+    // &:hover {
+    //     text-decoration: underline;
 }
-.container{
+
+.container {
     padding: 1.5rem;
     display: flex;
     justify-content: center;
 }
+
 .nav {
     color: #ffffff;
     padding: 1rem;
     background-color: #323232;
+
 
     &__logo {
         text-decoration: none;
@@ -22,14 +28,21 @@
         font-weight: bold;
         @include responsive-text(1.5rem);
     }
-}
-.nav__ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around
 
 }
-.nav__link{
+
+.nav__ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__link {
     color: #ffffff;
     text-decoration: none;
+    margin: 0 .625rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
