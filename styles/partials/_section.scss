@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 // // Main content and sections
 // .band-info {
 //     padding: 1rem;
@@ -17,25 +19,29 @@
 }
 
 .body-text {
-    padding: 1.25rem;
+    padding: 0;
 }
 
 .band-info__description {
     padding: .9375rem;
 }
 
-.band-info__quote{
+.band-info__quote {
     padding: .9375rem;
 }
 
 .band-info__content {
-    display: flex;
-    justify-content: space-between; // Ensures space between paragraphs
-    margin-bottom: 20px;
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+}
 
-    .band-info__description {
-        flex: 1; // Ensures that each paragraph takes up equal space
-        margin: 0 10px; // Adds space between the paragraphs
+.band-info__description {
+    @include tablet {
+        flex: 1;
+        margin: 0 10px;
         text-align: justify;
     }
 }
