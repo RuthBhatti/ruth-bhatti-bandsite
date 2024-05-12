@@ -35,6 +35,8 @@
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+
+
 }
 
 .nav__link {
@@ -43,6 +45,7 @@
     margin: 0 .625rem;
 
     &:hover {
-        text-decoration: underline;
+        text-decoration: oldlace;
+        border-bottom: solid 3px red;
     }
 }
