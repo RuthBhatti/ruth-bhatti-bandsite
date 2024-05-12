@@ -1,4 +1,5 @@
 @use "./mixins" as *;
+@use "./variables" as *;
 
 .contact {
     padding: 1rem;
@@ -7,9 +8,9 @@
 .footer {
     text-align: justify;
     padding: 1.5625rem;
-    font-size: 0.8rem;
-    background-color: #323232;
-    color: #fff;
+    font-size:.8125rem;
+    background-color: $bandSite-Black;
+    color: $white;
 
     &__logo2 {
         display: none;
@@ -31,15 +32,20 @@
 .footer__social-icons {
     @include tablet {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
+        width: 50%;
+        gap: 1.25rem;
+        justify-content: space-evenly;
 
     }
 }
 
 .footer__title {
+    padding-bottom: 1.5625rem;
+
     @include tablet {
-        padding: 10px;
-        font-size: x-large;
+        padding: .625rem;
+        font-size: 1rem;
     }
 }
 
@@ -52,7 +58,7 @@
 
 .icon {
     @include tablet {
-        padding: 10px;
+        padding: .625rem;
     }
 }
 
@@ -61,4 +67,45 @@
         display: flex;
         justify-content: space-around;
     }
+}
+
+.footer__h3 {
+    padding-bottom: .625rem;
+    padding-top: .625rem;
+}
+
+.info {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+
+.footer__copyright {
+    padding-top: .625rem;
+
+    @include tablet {
+        padding-left: 7%;
+        padding-top: .625rem;
+    }
+}
+
+.footer__logo1 {
+    padding: 0;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.emails {
+    text-decoration: none;
+    color: $white;
+}
+
+.logo1 {
+    padding-top: .625rem;
+}
+
+.footer__agent {
+    padding-bottom: 2.1875rem;
 }

@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./font" as *;
 
 
 // Gallery and images
@@ -7,17 +8,19 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem;
-    background-color: #E1E1E1;
+    background-color: $Mercury;
 
     .gallery__text {
         // Assuming this is your h2 selector based on your previous code snippet
         text-align: left; // Aligns the title text to the left
         width: 100%; // Ensures the title stretches across the full width of the gallery container
         margin-bottom: 1.25rem;
+        font-size: 2.25rem;
+        padding-left: 1.5625rem;
     }
 
     img {
-        width: 100%; // Default width for mobile-first design
+        width: 90%; // Default width for mobile-first design
         transition: filter 0.3s;
         max-width: 33.125rem; // Initially setting a max-width to keep images smaller
         padding: inherit;
@@ -31,8 +34,7 @@
 @media (min-width: $breakpoint-tablet) {
     .gallery {
         img {
-            width: auto; // Allow image to scale with its original aspect ratio
-            max-width: 14.0625rem; // Adjust this value to control the size on larger screens
+            width: 30%; // Allow image to scale with its original aspect ratio
             padding-bottom:1.25rem;
         }
     }
