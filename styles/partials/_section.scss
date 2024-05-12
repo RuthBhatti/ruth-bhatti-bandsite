@@ -1,4 +1,5 @@
 @use "./mixins" as *;
+@use "./variables" as*;
 
 // // Main content and sections
 // .band-info {
@@ -13,6 +14,13 @@
 //         @include responsive-text(1rem);
 //     }
 // }
+.band__image {
+    display: flex;
+}
+
+.section__tow {
+    display: flex;
+}
 
 .Musicians {
     padding: 1.25rem;
@@ -23,11 +31,18 @@
 }
 
 .band-info__description {
-    padding: .9375rem;
+    padding: 0.9375rem;
+    font-size: medium;
 }
 
 .band-info__quote {
-    padding: .9375rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    font-family: Avenir;
+    font-weight: 600;
+    font-size: medium;
+
 }
 
 .band-info__content {
@@ -43,5 +58,22 @@
         flex: 1;
         margin: 0 10px;
         text-align: inherit;
+        font-size: 26px;
     }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        /* Common breakpoint for tablets */
+        @content;
+    }
+}
+
+.bees-keens__section {
+    padding-left: 1.375rem;
+}
+
+.second__section {
+    padding: 2.1875rem;
+
 }
