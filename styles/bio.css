@@ -44,10 +44,8 @@
 @media (min-width: 48rem) {
   .footer__social-icons {
     display: flex;
-    align-items: center;
-    width: 50%;
-    gap: 1.25rem;
-    justify-content: space-evenly;
+    gap: 11rem;
+    justify-content: space-around;
   }
 }
 
@@ -77,7 +75,8 @@
 @media (min-width: 48rem) {
   .footer-info {
     display: flex;
-    justify-content: space-around;
+    padding: 0.625rem;
+    gap: 6.25rem;
   }
 }
 
@@ -96,7 +95,7 @@
 }
 @media (min-width: 48rem) {
   .footer__copyright {
-    padding-left: 7%;
+    padding-left: 0.625rem;
     padding-top: 0.625rem;
   }
 }
@@ -165,8 +164,8 @@
   .header {
     display: flex;
     padding: 0;
-    font-weight: bold;
-    align-items: flex-end;
+    font-weight: 2rem;
+    align-items: center;
   }
 }
 
@@ -184,7 +183,6 @@
 .nav__logo {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
   font-size: 1.5rem;
 }
 @media (min-width: 30rem) {
@@ -202,23 +200,35 @@
 .nav__link {
   color: #FFFFFF;
   text-decoration: none;
-  width: 50%;
+  width: 100%;
+  padding-right: 13rem;
+  padding-bottom: 2.3rem;
+  padding-left: 13rem;
 }
 @media (min-width: 48rem) {
   .nav__link {
-    padding: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
-.nav__link:hover {
+.nav__link:hover, .nav__link:active {
   -webkit-text-decoration: #FAFAFA;
           text-decoration: #FAFAFA;
-  padding-bottom: 1rem;
   border-bottom: solid 3px #FFFFFF;
 }
+.nav__link--active {
+  font-weight: 600;
+}
 
-.active {
-  padding-bottom: 1rem;
-  border-bottom: solid 3px #FFFFFF;
+.nav__li {
+  padding: 1.4rem 0 1.6rem;
+  text-align: center;
+  width: 50%;
+}
+@media (min-width: 48rem) {
+  .nav__li {
+    padding-right: 2rem;
+  }
 }
 
 .hero {
@@ -246,6 +256,7 @@ h1 {
   padding: 0;
   margin: 0;
   font-size: 0.8125rem;
+  box-sizing: border-box;
 }
 
 .band__image {

@@ -32,10 +32,10 @@
 .footer__social-icons {
     @include tablet {
         display: flex;
-        align-items: center;
-        width: 50%;
-        gap: 1.25rem;
-        justify-content: space-evenly;
+        //align-items: center;
+        // width: 50%;
+        gap: 11rem;
+        justify-content: space-around;
 
     }
 }
@@ -65,7 +65,9 @@
 .footer-info {
     @include tablet {
         display: flex;
-        justify-content: space-around;
+        // justify-content: space-around;
+        padding: .625rem;
+        gap: 6.25rem;
     }
 }
 
@@ -83,7 +85,7 @@
     padding-top: .625rem;
 
     @include tablet {
-        padding-left: 7%;
+        padding-left: .625rem;
         padding-top: .625rem;
     }
 }
