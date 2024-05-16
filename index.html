@@ -15,7 +15,7 @@
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__li"><a href="index.html" class="nav__link nav__link--active">Biography</a></li>
-                <li class="nav__li"><a href="shows.html" class="nav__link">Shows</a></li>
+                <li class="nav__li"><a href="./show.html" class="nav__link">Shows</a></li>
             </ul>
         </nav>
     </header>
@@ -33,7 +33,7 @@
                 <blockquote class="section-about__quote">
                     “We push each other to be the best. It’s not uncommon for one of us to say ‘this needs
                     to be better, back to the drawing board’”
-                    <br class="small-text"/>- Lead vocalist of The Bees Knees
+                    <br class="small-text" />- Lead vocalist of The Bees Knees
                 </blockquote>
             </section>
             <section class="second__section">
@@ -66,19 +66,35 @@
                 </section>
             </section>
         </div>
-        <section class="gallery">
-            <h2 class="gallery__text">Photo Gallery</h2>
-            <img class="background-img" src="/assets/Images/Photo-gallery-1.jpg" alt="Gallery Photo 1">
-            <img class="background-img" src="/assets/Images/Photo-gallery-2.jpg" alt="Gallery Photo 2">
-            <img class="background-img" src="/assets/Images/Photo-gallery-3.jpg" alt="Gallery Photo 3">
-            <img class="background-img" src="/assets/Images/Photo-gallery-4.jpg" alt="Gallery Photo 4">
-            <img class="background-img" src="/assets/Images/Photo-gallery-5.jpg" alt="Gallery Photo 5">
-            <img class="background-img" src="/assets/Images/Photo-gallery-9.jpg" alt="Gallery Photo 6">
-            <img class="background-img" src="/assets/Images/Photo-gallery-7.jpg" alt="Gallery Photo 7">
-            <img class="background-img" src="/assets/Images/Photo-gallery-8.jpg" alt="Gallery Photo 8">
-            <img class="background-img" src="/assets/Images/Photo-gallery-6.jpg" alt="Gallery Photo 9">
-        </section>
+        <div>
+            <section class="gallery">
+                <h2 class="gallery__text">Photo Gallery</h2>
+                <img class="background-img" src="/assets/Images/Photo-gallery-1.jpg" alt="Gallery Photo 1">
+                <img class="background-img" src="/assets/Images/Photo-gallery-2.jpg" alt="Gallery Photo 2">
+                <img class="background-img" src="/assets/Images/Photo-gallery-3.jpg" alt="Gallery Photo 3">
+                <img class="background-img" src="/assets/Images/Photo-gallery-4.jpg" alt="Gallery Photo 4">
+                <img class="background-img" src="/assets/Images/Photo-gallery-5.jpg" alt="Gallery Photo 5">
+                <img class="background-img" src="/assets/Images/Photo-gallery-9.jpg" alt="Gallery Photo 6">
+                <img class="background-img" src="/assets/Images/Photo-gallery-7.jpg" alt="Gallery Photo 7">
+                <img class="background-img" src="/assets/Images/Photo-gallery-8.jpg" alt="Gallery Photo 8">
+                <img class="background-img" src="/assets/Images/Photo-gallery-6.jpg" alt="Gallery Photo 9">
+            </section>
         </div>
+        <h2 class="comments__header">Join the Conversation</h2>
+        <section class="comments">
+            
+            <div class="commentbox">
+                <img src="./assets/Images/Mohan-muruge.jpg" alt="Artist-Image">
+                <form id="commentForm" class="comments__form">
+                    <label for="name" class="comments__label">Name:</label>
+                    <input type="text" id="name" class="comments__input" required>
+                    <label for="comment" class="comments__label">Comment:</label>
+                    <textarea id="comment" class="comments__textarea" required></textarea>
+                    <button type="submit" class="comments__button">Add Comment</button>
+                </form>
+                <div id="commentsList" class="comments__list"></div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__contacts">
@@ -96,7 +112,8 @@
                 </section>
             </section>
             <section class="footer__logo">
-                <a href="index.html" class="footer__logo2"> <img src="/assets/Logo/Logo-bandsite.svg" alt="band-site-logo"></a>
+                <a href="index.html" class="footer__logo2"> <img src="/assets/Logo/Logo-bandsite.svg"
+                        alt="band-site-logo"></a>
             </section>
         </div>
         <section class="footer-info">
@@ -116,7 +133,8 @@
                 <a class="emails" href="mailto:bookings@archentertainment.com">bookings@archentertainment.com</a>
             </div>
             </div>
-            <a href="index.html" class="footer__logo1"> <img src="/assets/Logo/Logo-bandsite.svg" alt="band-site-logo"></a>
+            <a href="index.html" class="footer__logo1"> <img src="/assets/Logo/Logo-bandsite.svg"
+                    alt="band-site-logo"></a>
         </section>
         <div class="footer__copyright">
             <p>Copyright The Bees Knees © 2023 All Rights Reserved</p>
