@@ -10,8 +10,11 @@
 
 <body>
     <header class="header">
-        <section class="container"><a href="index.html" class="nav__logo"> <img src="/assets/Logo/Logo-bandsite.svg"
-                    alt="band-site-logo"></a></section>
+        <section class="container">
+            <a href="index.html" class="nav__logo">
+                <img src="/assets/Logo/Logo-bandsite.svg" alt="band-site-logo">
+            </a>
+        </section>
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__li"><a href="index.html" class="nav__link nav__link--active">Biography</a></li>
@@ -31,8 +34,8 @@
                 <h2 class="section-about__header">About the Musicians</h2>
                 <img class="section-about__image" src="./assets/Images/band.jpg" alt="band images">
                 <blockquote class="section-about__quote">
-                    “We push each other to be the best. It’s not uncommon for one of us to say ‘this needs
-                    to be better, back to the drawing board’”
+                    “We push each other to be the best. It’s not uncommon for one of us to say ‘this needs to be better,
+                    back to the drawing board’”
                     <br class="small-text" />- Lead vocalist of The Bees Knees
                 </blockquote>
             </section>
@@ -41,27 +44,19 @@
                 <section class="band-info__content">
                     <p class="band-info__description">
                         The Bees Knees is a pop rock band originating from San Francisco, California. The band consists
-                        of a
-                        dynamic lineup featuring two lead vocalists, two guitarists, a bassist, a keyboardist, and a
-                        drummer.
-                        The band achieved its first commercial success as an unsigned act, drawing attention from their
-                        future
-                        manager. Having extensive experience working with both new and seasoned acts, the manager was
-                        confident
-                        the band could succeed even further with more support, pushing The Bees Knees to sign with a
-                        well-known record label.
+                        of a dynamic lineup featuring two lead vocalists, two guitarists, a bassist, a keyboardist, and
+                        a drummer. The band achieved its first commercial success as an unsigned act, drawing attention
+                        from their future manager. Having extensive experience working with both new and seasoned acts,
+                        the manager was confident the band could succeed even further with more support, pushing The
+                        Bees Knees to sign with a well-known record label.
                     </p>
                     <p class="band-info__description">
                         From there, the band has soared, gaining international recognition and ranking in the top 10 on
-                        the
-                        Poster Charts. New fans immediately fell in love with the band’s original and organic attitude,
-                        solidifying their place as one of the hottest and fastest up-and-coming acts of this century.
-                        Fans
-                        affectionately refer to themselves as “The Hive” and are drawn to their candid and authentic
-                        performances on stage. The Bees Knees are currently recording their second studio album, looking
-                        to
-                        be
-                        released in early 2024.
+                        the Poster Charts. New fans immediately fell in love with the band’s original and organic
+                        attitude, solidifying their place as one of the hottest and fastest up-and-coming acts of this
+                        century. Fans affectionately refer to themselves as “The Hive” and are drawn to their candid and
+                        authentic performances on stage. The Bees Knees are currently recording their second studio
+                        album, looking to be released in early 2024.
                     </p>
                 </section>
             </section>
@@ -80,20 +75,21 @@
                 <img class="background-img" src="/assets/Images/Photo-gallery-6.jpg" alt="Gallery Photo 9">
             </section>
         </div>
+        <!-- comments section  -->
         <h2 class="comments__header">Join the Conversation</h2>
         <section class="comments">
-            
-            <div class="commentbox">
-                <img src="./assets/Images/Mohan-muruge.jpg" alt="Artist-Image">
+            <div class="comments__form-container">
+                <img src="./assets/Images/Mohan-muruge.jpg" alt="Artist-Image" class="comments__avatar">
                 <form id="commentForm" class="comments__form">
-                    <label for="name" class="comments__label">Name:</label>
-                    <input type="text" id="name" class="comments__input" required>
-                    <label for="comment" class="comments__label">Comment:</label>
-                    <textarea id="comment" class="comments__textarea" required></textarea>
-                    <button type="submit" class="comments__button">Add Comment</button>
+                    <label for="name" class="comments__label">Name</label>
+                    <input type="text" id="name" class="comments__input" placeholder="Enter your name" required>
+                    <label for="comment" class="comments__label">Comment</label>
+                    <textarea id="comment" class="comments__textarea" placeholder="Add a new comment"
+                        required></textarea>
+                    <button type="submit" class="comments__button">Comment</button>
                 </form>
-                <div id="commentsList" class="comments__list"></div>
             </div>
+            <div id="commentsList" class="comments__list"></div>
         </section>
     </main>
     <footer class="footer">
@@ -141,6 +137,7 @@
         </div>
     </footer>
 
+    <script src="./scripts/comments.js"></script>
 </body>
 
 </html>

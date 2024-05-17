@@ -242,6 +242,17 @@
   padding-left: 1.875rem;
 }
 
+.show_hero {
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/Photo-gallery-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.875rem;
+}
+
 h1 {
   color: #FFFFFF;
   font-size: 2rem;
@@ -348,6 +359,105 @@ h1 {
 
 .second__section {
   padding: 2.1875rem;
+}
+
+.comments__header {
+  font-size: 2em;
+  margin-bottom: 1em;
+  text-align: left;
+  padding: 1.25rem 1.25rem;
+}
+
+.comments__form-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 2em;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.comments__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.comments__form {
+  flex-grow: 1;
+}
+
+.comments__label {
+  display: block;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.comments__input, .comments__textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comments__button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comments__button:hover {
+  background-color: #555;
+  padding: 90px;
+}
+
+.comments__list {
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.comments {
+  padding: 90px;
+}
+
+.comment__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.comment__content {
+  flex-grow: 1;
+}
+
+.comment__name {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.comment__date {
+  font-size: 0.8em;
+  color: #999;
+  margin: 0;
+}
+
+.comment__text {
+  margin: 0.5em 0 0 0;
+  font-size: 0.9em;
 }
 
 body {

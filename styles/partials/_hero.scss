@@ -11,6 +11,17 @@
     align-items: center;
     padding-left: 1.875rem;
 }
+.show_hero{
+    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/Photo-gallery-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 18rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1.875rem;
+
+}
 
 h1 {
     color: $white;
