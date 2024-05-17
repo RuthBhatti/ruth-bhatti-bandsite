@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bees Knees - Shows</title>
     <link rel="stylesheet" href="./styles/bio.css">
+    <link rel="stylesheet" href="./styles/shows.css"> <!-- Add this line for the shows styles -->
+    <script src="./shows.js" defer></script> <!-- Add defer to ensure the script runs after HTML loads -->
 </head>
 
 <body>
@@ -34,9 +36,59 @@
                 </div>
             </div>
         </section>
+        <!-- SHOWS -->
         <section class="shows">
             <h2 class="shows__header">Shows</h2>
-            <div id="showsList" class="shows__list"></div>
+            <div class="shows-section">
+                <div class="show">
+                    <div class="show-details">
+                        <div class="show-date">Mon Sept 09 2024</div>
+                        <div class="show-venue">Ronald Lane</div>
+                        <div class="show-location">San Francisco, CA</div>
+                    </div>
+                    <button class="btn buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="show">
+                    <div class="show-details">
+                        <div class="show-date">Tue Sept 17 2024</div>
+                        <div class="show-venue">Pier 3 East</div>
+                        <div class="show-location">San Francisco, CA</div>
+                    </div>
+                    <button class="btn buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="show">
+                    <div class="show-details">
+                        <div class="show-date">Sat Oct 12 2024</div>
+                        <div class="show-venue">View Lounge</div>
+                        <div class="show-location">San Francisco, CA</div>
+                    </div>
+                    <button class="btn buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="show">
+                    <div class="show-details">
+                        <div class="show-date">Sat Nov 16 2024</div>
+                        <div class="show-venue">Hyatt Agency</div>
+                        <div class="show-location">San Francisco, CA</div>
+                    </div>
+                    <button class="btn buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="show">
+                    <div class="show-details">
+                        <div class="show-date">Fri Nov 29 2024</div>
+                        <div class="show-venue">Moscow Center</div>
+                        <div class="show-location">San Francisco, CA</div>
+                    </div>
+                    <button class="btn buy-tickets">Buy Tickets</button>
+                </div>
+                <div class="show">
+                    <div class="show-details">
+                        <div class="show-date">Wed Dec 18 2024</div>
+                        <div class="show-venue">Press Club</div>
+                        <div class="show-location">San Francisco, CA</div>
+                    </div>
+                    <button class="btn buy-tickets">Buy Tickets</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -83,8 +135,6 @@
             <p>Copyright The Bees Knees © 2023 All Rights Reserved</p>
         </div>
     </footer>
-
-    <script src="./shows.js"></script>
 </body>
 
 </html>

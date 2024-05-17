@@ -1,0 +1,50 @@
+.shows-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.show {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.date,
+.venue,
+.location {
+    margin-bottom: 5px;
+}
+
+.date {
+    font-weight: bold;
+}
+
+.venue,
+.location {
+    color: #666;
+}
+
+.buy-tickets {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.buy-tickets:hover {
+    background-color: #555;
+}

@@ -177,7 +177,6 @@
 
 .nav {
   color: #FFFFFF;
-  padding: 1rem;
   background-color: #323232;
 }
 .nav__logo {
@@ -201,9 +200,7 @@
   color: #FFFFFF;
   text-decoration: none;
   width: 100%;
-  padding-right: 13rem;
   padding-bottom: 2.3rem;
-  padding-left: 13rem;
 }
 @media (min-width: 48rem) {
   .nav__link {
@@ -211,23 +208,17 @@
     padding-left: 2rem;
   }
 }
-.nav__link:hover, .nav__link:active {
-  -webkit-text-decoration: #FAFAFA;
-          text-decoration: #FAFAFA;
-  border-bottom: solid 3px #FFFFFF;
-}
-.nav__link--active {
-  font-weight: 600;
-}
 
 .nav__li {
-  padding: 1.4rem 0 1.6rem;
   text-align: center;
   width: 50%;
 }
+.nav__li--active {
+  border-bottom: solid 0.25rem white;
+}
 @media (min-width: 48rem) {
-  .nav__li {
-    padding-right: 2rem;
+  .nav__li--active {
+    border-bottom: solid 5px white;
   }
 }
 
@@ -411,7 +402,6 @@ h1 {
 
 .comments__button:hover {
   background-color: #555;
-  padding: 90px;
 }
 
 .comments__list {

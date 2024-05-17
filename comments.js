@@ -1,67 +1,74 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const commentForm = document.getElementById('commentForm');
-    const commentsList = document.getElementById('commentsList');
+const commentForm = document.getElementById('commentForm');
+const commentsList = document.getElementById('commentsList');
 
-    const comments = [
-        { name: 'Christina Cabrera', date: '10/28/2023', text: 'I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.' },
-        { name: 'Isaac Tadesse', date: '10/20/2023', text: 'I can\'t stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can\'t get enough.' }
-    ];
+const comments = [
+    { name: 'Christina Cabrera', date: '10/28/2023', text: 'I feel blessed to have seen them in person. What a show! They were just perfection. If there was one day of my life I could relive, this would be it. What an incredible day.' },
+    { name: 'Isaac Tadesse', date: '10/20/2023', text: 'I can\'t stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can\'t get enough.' }
+];
 
-    const renderComments = () => {
-        commentsList.innerHTML = '';
-        comments.forEach(comment => {
-            const commentElement = document.createElement('div');
-            commentElement.classList.add('comment');
+// const renderComments = () => {
+function renderComments(data) {
+    commentsList.innerHTML = '';
+    data.forEach(comment => {
+        console.log(comment)
+        const commentElement = document.createElement('div');
+        commentElement.classList.add('comment');
 
-            const avatarElement = document.createElement('img');
-            avatarElement.classList.add('comment__avatar');
-            avatarElement.src = './assets/Images/Mohan-muruge.jpg'; // Use a placeholder image or user avatar
+        const avatarElement = document.createElement('img');
+        avatarElement.classList.add('comment__avatar');
+        avatarElement.src = './assets/Images/Mohan-muruge.jpg'; // Use a placeholder image or user avatar
 
-            const contentElement = document.createElement('div');
-            contentElement.classList.add('comment__content');
+        const contentElement = document.createElement('div');
+        contentElement.classList.add('comment__content');
 
-            const nameElement = document.createElement('h3');
-            nameElement.classList.add('comment__name');
-            nameElement.innerText = comment.name;
+        const headerElement = document.createElement('div');
+        headerElement.classList.add(`comment__header`);
 
-            const dateElement = document.createElement('span');
-            dateElement.classList.add('comment__date');
-            dateElement.innerText = comment.date;
+        const nameElement = document.createElement('h3');
+        nameElement.classList.add('comment__name');
+        nameElement.innerText = comment.name;
 
-            const textElement = document.createElement('p');
-            textElement.classList.add('comment__text');
-            textElement.innerText = comment.text;
+        const dateElement = document.createElement('span');
+        dateElement.classList.add('comment__date');
+        dateElement.innerText = comment.date;
 
-            contentElement.appendChild(nameElement);
-            contentElement.appendChild(dateElement);
-            contentElement.appendChild(textElement);
+        const textElement = document.createElement('p');
+        textElement.classList.add('comment__text');
+        textElement.innerText = comment.text;
 
-            commentElement.appendChild(avatarElement);
-            commentElement.appendChild(contentElement);
+        contentElement.appendChild(headerElement);
+        headerElement.appendChild(nameElement);
+        headerElement.appendChild(dateElement);
+        contentElement.appendChild(textElement);
 
-            commentsList.appendChild(commentElement);
-        });
+        commentElement.appendChild(avatarElement);
+
+
+        commentElement.appendChild(contentElement);
+
+        commentsList.appendChild(commentElement);
+    });
+};
+
+commentForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const nameInput = document.getElementById('name');
+    const commentInput = document.getElementById('comment');
+
+    const newComment = {
+        name: nameInput.value,
+        date: new Date().toLocaleDateString(),  // Get current date
+        text: commentInput.value
     };
 
-    commentForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    comments.unshift(newComment);
 
-        const nameInput = document.getElementById('name');
-        const commentInput = document.getElementById('comment');
+    renderComments(comments);
 
-        const newComment = {
-            name: nameInput.value,
-            date: new Date().toLocaleDateString(),  // Get current date
-            text: commentInput.value
-        };
-
-        comments.unshift(newComment);
-
-        renderComments();
-
-        nameInput.value = '';
-        commentInput.value = '';
-    });
-
-    renderComments();
+    nameInput.value = '';
+    commentInput.value = '';
 });
+
+renderComments(comments);
+
