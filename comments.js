@@ -16,7 +16,7 @@ function renderComments(data) {
 
         const avatarElement = document.createElement('img');
         avatarElement.classList.add('comment__avatar');
-        avatarElement.src = './assets/Images/Mohan-muruge.jpg'; // Use a placeholder image or user avatar
+        avatarElement.src = './assets/images/comment__avatar.jpg'; // Use a placeholder image or user avatar
 
         const contentElement = document.createElement('div');
         contentElement.classList.add('comment__content');

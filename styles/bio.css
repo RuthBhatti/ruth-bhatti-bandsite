@@ -173,6 +173,8 @@
   padding: 1.5rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav {
@@ -204,6 +206,8 @@
 }
 @media (min-width: 48rem) {
   .nav__link {
+    text-decoration: none;
+    width: 6.25rem;
     padding-right: 2rem;
     padding-left: 2rem;
   }
@@ -352,6 +356,11 @@ h1 {
   padding: 2.1875rem;
 }
 
+.comments__section {
+  display: flex;
+  margin-right: 2rem;
+}
+
 .comments__header {
   font-size: 2em;
   margin-bottom: 1em;
@@ -364,11 +373,13 @@ h1 {
   align-items: flex-start;
   gap: 1em;
   margin-bottom: 2em;
+  padding-left: 1.125rem;
+  padding-right: 2.8rem;
 }
 
 .comments__avatar {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   border-radius: 50%;
 }
 
@@ -383,20 +394,26 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-.comments__input, .comments__textarea {
+.comments__input,
+.comments__textarea {
   width: 100%;
   padding: 0.5em;
   margin-bottom: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+}
+
+.textarea {
+  min-width: 6.25rem;
 }
 
 .comments__button {
+  width: 100%;
   background-color: #333;
   color: #fff;
   padding: 0.7em 1.5em;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   cursor: pointer;
 }
 
@@ -405,21 +422,22 @@ h1 {
 }
 
 .comments__list {
-  border-top: 1px solid #ccc;
   padding-top: 1em;
+  padding: 1rem 1.875rem 0;
 }
 
 .comment {
+  border-top: 0.0313rem solid #ccc;
   display: flex;
   align-items: flex-start;
   gap: 1em;
   padding: 1em 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.0625rem solid #ccc;
 }
 
 .comment__avatar {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border-radius: 50%;
 }
 
@@ -448,7 +466,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 body {
