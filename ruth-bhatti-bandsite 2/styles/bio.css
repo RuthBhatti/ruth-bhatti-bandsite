@@ -1,0 +1,519 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(../assets/fonts/AvenirNextLTPro-Demi.otf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Avenir;
+  src: url(../assets/fonts/AvenirNextLTPro-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
+}
+.contact {
+  padding: 1rem;
+}
+
+.footer {
+  text-align: justify;
+  padding: 1.5625rem;
+  font-size: 0.8125rem;
+  background-color: #323232;
+  color: #FFFFFF;
+}
+.footer__logo2 {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .footer__logo2 {
+    display: block;
+  }
+}
+@media (min-width: 48rem) {
+  .footer__logo1 {
+    display: none;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer__social-icons {
+    display: flex;
+    gap: 11rem;
+    justify-content: space-around;
+  }
+}
+
+.footer__title {
+  padding-bottom: 1.5625rem;
+}
+@media (min-width: 48rem) {
+  .footer__title {
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer__contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 48rem) {
+  .icon {
+    padding: 0.625rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer-info {
+    display: flex;
+    padding: 0.625rem;
+    gap: 6.25rem;
+  }
+}
+
+.footer__h3 {
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
+}
+
+.info {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.footer__copyright {
+  padding-top: 0.625rem;
+}
+@media (min-width: 48rem) {
+  .footer__copyright {
+    padding-left: 0.625rem;
+    padding-top: 0.625rem;
+  }
+}
+
+.footer__logo1 {
+  padding: 0;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.emails {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.logo1 {
+  padding-top: 0.625rem;
+}
+
+.footer__agent {
+  padding-bottom: 2.1875rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #FAFAFA;
+}
+.gallery .gallery__text {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  font-size: 2.25rem;
+  padding-left: 1.5625rem;
+}
+.gallery img {
+  width: 90%;
+  transition: filter 0.3s;
+  max-width: 33.125rem;
+  padding: inherit;
+}
+.gallery img:hover {
+  filter: grayscale(0%);
+}
+
+@media (min-width: 48rem) {
+  .gallery img {
+    width: 30%;
+    padding-bottom: 1.25rem;
+  }
+}
+.background-img {
+  padding: 0.3125rem;
+}
+
+.header {
+  background-color: #323232;
+  display: column;
+}
+@media (min-width: 48rem) {
+  .header {
+    display: flex;
+    padding: 0;
+    font-weight: 2rem;
+    align-items: center;
+  }
+}
+
+.container {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  color: #FFFFFF;
+  background-color: #323232;
+}
+.nav__logo {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+}
+@media (min-width: 30rem) {
+  .nav__logo {
+    font-size: 1.8rem;
+  }
+}
+
+.nav__ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 100%;
+  padding-bottom: 2.3rem;
+}
+@media (min-width: 48rem) {
+  .nav__link {
+    text-decoration: none;
+    width: 6.25rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.nav__li {
+  text-align: center;
+  width: 50%;
+  padding-bottom: 1rem;
+}
+@media (min-width: 80rem) {
+  .nav__li {
+    padding-bottom: none;
+  }
+}
+.nav__li--active {
+  border-bottom: solid 0.25rem #FFFFFF;
+}
+@media (min-width: 48rem) {
+  .nav__li--active {
+    border-bottom: solid 5px #FFFFFF;
+  }
+}
+
+.hero {
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/hero-bio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 18rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.875rem;
+}
+
+.show_hero {
+  background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/Photo-gallery-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.875rem;
+}
+@media (min-width: 80rem) {
+  .show_hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.title__hero__show {
+  font-size: 600;
+}
+
+.shows__music-header {
+  color: #FFFFFF;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.band__image {
+  width: 90%;
+  margin: 1.5625rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8125rem;
+  box-sizing: border-box;
+}
+
+.band__image {
+  display: flex;
+}
+
+.section-about__image {
+  width: 90%;
+  padding-left: 3.125rem;
+}
+
+.section__tow {
+  display: flex;
+}
+
+.Musicians {
+  padding: 1.25rem;
+}
+
+.body-text {
+  padding: 0;
+}
+
+.section-about {
+  padding: 0 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.section-about__header {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.section-about__quote {
+  width: 90%;
+  padding-left: 3.125rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  display: flex;
+  font-family: Avenir;
+  font-weight: 400;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+
+.band-info__description {
+  padding: 0.9375rem;
+  font-size: medium;
+}
+
+.band-info__quote {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  display: flex;
+  font-family: Avenir;
+  font-weight: 600;
+  font-size: medium;
+  width: 20%;
+}
+
+.small-text {
+  font-size: 0.625rem;
+}
+
+@media (min-width: 48rem) {
+  .band-info__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .band-info__description {
+    flex: 1;
+    margin: 0 0.625rem;
+    text-align: inherit;
+    font-size: 1.625rem;
+  }
+}
+
+.bees-keens__section {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.second__section {
+  padding: 2.1875rem;
+}
+
+.comments__section {
+  display: flex;
+  margin-right: 2rem;
+}
+@media (min-width: 48rem) {
+  .comments__section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    padding-left: 12.5rem;
+    padding-right: 7rem;
+  }
+}
+
+.comments__header {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  text-align: left;
+  padding: 1.25rem 1.25rem;
+}
+
+.comments__form-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 2em;
+  padding-left: 1.125rem;
+  padding-right: 2.8rem;
+}
+
+.comments__avatar {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+}
+
+.comments__form {
+  flex-grow: 1;
+}
+
+.comments__label {
+  display: block;
+  font-size: 0.625rem;
+  margin-bottom: 0.5em;
+  color: #AFAFAF;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.comments__input,
+.comments__textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 0.0625rem solid #E1E1E1;
+  border-radius: 0.3125rem;
+}
+
+.textarea {
+  min-width: 6.25rem;
+}
+
+.comments__button {
+  width: 100%;
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.comments__button:hover {
+  background-color: #000000;
+}
+
+.comments__list {
+  padding-top: 1em;
+  padding: 1rem 1.875rem 0;
+}
+
+.comment {
+  border-top: 0.0313rem solid #E1E1E1;
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1em 0;
+  border-bottom: 0.0625rem solid #E1E1E1;
+}
+
+.comment__avatar {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+
+.comment__content {
+  flex-grow: 1;
+}
+
+.comment__name {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.comment__date {
+  font-size: 0.8125rem;
+  color: #AFAFAF;
+  margin: 0;
+}
+
+.comment__text {
+  margin: 0.5em 0 0 0;
+  font-size: 0.8125rem;
+}
+
+.comment__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+body {
+  font-family: Avenir;
+}
+
+.commentbox > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-right: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=bio.css.map */

@@ -1,0 +1,125 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+.comments__section {
+    display: flex;
+    margin-right: 2rem;
+
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2em;
+        padding-left: 12.5rem;
+        padding-right: 7rem;
+    }
+}
+
+.comments__header {
+    font-size: $font-size;
+    margin-bottom: 1em;
+    text-align: left;
+    padding: 1.25rem 1.25rem;
+}
+
+.comments__form-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    margin-bottom: 2em;
+    padding-left: 1.125rem;
+    padding-right: 2.8rem;
+}
+
+.comments__avatar {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+}
+
+.comments__form {
+    flex-grow: 1;
+}
+
+.comments__label {
+    display: block;
+    font-size: $label-button-text-size;
+    margin-bottom: 0.5em;
+    color: $silver;
+    text-transform: uppercase;
+    font-weight: $subheader-font-weight;
+}
+
+.comments__input,
+.comments__textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: .0625rem solid $Mercury;
+    border-radius: .3125rem;
+}
+
+.textarea {
+    min-width: 6.25rem;
+}
+
+.comments__button {
+    width: 100%;
+    background-color: $bandSite-Black;
+    color: $white;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: .3125rem;
+    cursor: pointer;
+}
+
+.comments__button:hover {
+    background-color: $BandSite-DarkBlack;
+}
+
+.comments__list {
+    padding-top: 1em;
+    padding: 1rem 1.875rem 0;
+}
+
+.comment {
+    border-top: 0.0313rem solid $Mercury;
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 1em 0;
+    border-bottom: .0625rem solid $Mercury;
+}
+
+.comment__avatar {
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+}
+
+.comment__content {
+    flex-grow: 1;
+}
+
+.comment__name {
+    font-size: $font-size-body;
+    font-weight: $font-weight-body;
+    margin: 0;
+}
+
+.comment__date {
+    font-size: $body-text-size;
+    color: $silver;
+    margin: 0;
+}
+
+.comment__text {
+    margin: 0.5em 0 0 0;
+    font-size: $body-text-size;
+}
+
+.comment__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .625rem;
+}
