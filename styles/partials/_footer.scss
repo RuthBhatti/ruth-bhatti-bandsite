@@ -8,7 +8,7 @@
 .footer {
     text-align: justify;
     padding: 1.5625rem;
-    font-size:.8125rem;
+    font-size: $font-size-body;
     background-color: $bandSite-Black;
     color: $white;
 
@@ -21,22 +21,17 @@
     }
 
     &__logo1 {
-
         @include tablet {
             display: none;
         }
-
     }
 }
 
 .footer__social-icons {
     @include tablet {
         display: flex;
-        //align-items: center;
-        // width: 50%;
         gap: 11rem;
         justify-content: space-around;
-
     }
 }
 
@@ -65,7 +60,6 @@
 .footer-info {
     @include tablet {
         display: flex;
-        // justify-content: space-around;
         padding: .625rem;
         gap: 6.25rem;
     }

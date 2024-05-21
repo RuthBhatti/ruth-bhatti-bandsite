@@ -1,8 +1,9 @@
 @use "./variables" as *;
 @use "./font" as *;
+@use "./mixins" as *;
 
 .hero {
-    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/hero-bio.jpg);
+    background: linear-gradient(rgba($bandSite-Black, 0.5), rgba($bandSite-Black, 0.5)), url(../assets/images/hero-bio.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -11,16 +12,32 @@
     align-items: center;
     padding-left: 1.875rem;
 }
-.show_hero{
-    background: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(../assets/images/Photo-gallery-3.jpg);
+
+.show_hero {
+    background: linear-gradient(rgba($bandSite-Black, 0.5), rgba($bandSite-Black, 0.5)), url(../assets/images/Photo-gallery-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 18rem;
+    height: 25rem;
     display: flex;
     align-items: center;
     padding-left: 1.875rem;
 
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.title__hero__show {
+    font-size: 600;
+}
+
+.shows__music-header {
+    color: $white;
+    font-weight: 500;
+    padding-bottom: 1rem;
 }
 
 h1 {

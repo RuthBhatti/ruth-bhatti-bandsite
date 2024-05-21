@@ -183,7 +183,7 @@
 }
 .nav__logo {
   text-decoration: none;
-  color: #333;
+  color: #FFFFFF;
   font-size: 1.5rem;
 }
 @media (min-width: 30rem) {
@@ -216,14 +216,7 @@
 .nav__li {
   text-align: center;
   width: 50%;
-}
-.nav__li--active {
-  border-bottom: solid 0.25rem white;
-}
-@media (min-width: 48rem) {
-  .nav__li--active {
-    border-bottom: solid 5px white;
-  }
+  padding-bottom: 10rem;
 }
 
 .hero {
@@ -242,10 +235,27 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 18rem;
+  height: 25rem;
   display: flex;
   align-items: center;
   padding-left: 1.875rem;
+}
+@media (min-width: 80rem) {
+  .show_hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.title__hero__show {
+  font-size: 600;
+}
+
+.shows__music-header {
+  color: #FFFFFF;
+  font-weight: 500;
+  padding-bottom: 1rem;
 }
 
 h1 {
@@ -371,7 +381,7 @@ h1 {
 }
 
 .comments__header {
-  font-size: 2em;
+  font-size: 1.5rem;
   margin-bottom: 1em;
   text-align: left;
   padding: 1.25rem 1.25rem;
@@ -398,7 +408,7 @@ h1 {
 
 .comments__label {
   display: block;
-  font-size: 0.9em;
+  font-size: 0.625rem;
   margin-bottom: 0.5em;
   color: #AFAFAF;
   text-transform: uppercase;
@@ -410,7 +420,7 @@ h1 {
   width: 100%;
   padding: 0.5em;
   margin-bottom: 1em;
-  border: 0.0625rem solid #ccc;
+  border: 0.0625rem solid #E1E1E1;
   border-radius: 0.3125rem;
 }
 
@@ -420,8 +430,8 @@ h1 {
 
 .comments__button {
   width: 100%;
-  background-color: #333;
-  color: #fff;
+  background-color: #323232;
+  color: #FFFFFF;
   padding: 0.7em 1.5em;
   border: none;
   border-radius: 0.3125rem;
@@ -429,21 +439,21 @@ h1 {
 }
 
 .comments__button:hover {
-  background-color: #555;
+  background-color: #000000;
 }
 
 .comments__list {
   padding-top: 1em;
-  padding: 1rem 1.875rem 0;
+  padding: 1rem 1.875rem 10rem;
 }
 
 .comment {
-  border-top: 0.0313rem solid #ccc;
+  border-top: 0.0313rem solid #E1E1E1;
   display: flex;
   align-items: flex-start;
   gap: 1em;
   padding: 1em 0;
-  border-bottom: 0.0625rem solid #ccc;
+  border-bottom: 0.0625rem solid #E1E1E1;
 }
 
 .comment__avatar {
@@ -457,20 +467,20 @@ h1 {
 }
 
 .comment__name {
-  font-size: 1em;
-  font-weight: bold;
+  font-size: 0.8125rem;
+  font-weight: 400;
   margin: 0;
 }
 
 .comment__date {
-  font-size: 0.8em;
-  color: #999;
+  font-size: 0.8125rem;
+  color: #AFAFAF;
   margin: 0;
 }
 
 .comment__text {
   margin: 0.5em 0 0 0;
-  font-size: 0.9em;
+  font-size: 0.8125rem;
 }
 
 .comment__header {

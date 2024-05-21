@@ -2,27 +2,38 @@
 @use "./font" as *;
 
 
-// Gallery and images
+@use "./mixins" as *;
+
+$breakpoint-tablet: 48rem;
+$breakpoint-desktop: 80rem;
+
+$bandSite-Black: #323232;
+$silver: #AFAFAF;
+$white: #FFFFFF;
+
+$BandSite-DarkBlack: #000000;
+$Mercury: #E1E1E1;
+$Alabaster: #FAFAFA;
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem;
-    background-color: #FAFAFA;
+    background-color: $Alabaster;
 
     .gallery__text {
-        // Assuming this is your h2 selector based on your previous code snippet
-        text-align: left; // Aligns the title text to the left
-        width: 100%; // Ensures the title stretches across the full width of the gallery container
+        text-align: left;
+        width: 100%;
         margin-bottom: 1.25rem;
         font-size: 2.25rem;
         padding-left: 1.5625rem;
     }
 
     img {
-        width: 90%; // Default width for mobile-first design
+        width: 90%;
         transition: filter 0.3s;
-        max-width: 33.125rem; // Initially setting a max-width to keep images smaller
+        max-width: 33.125rem;
         padding: inherit;
 
         &:hover {
@@ -34,8 +45,8 @@
 @media (min-width: $breakpoint-tablet) {
     .gallery {
         img {
-            width: 30%; // Allow image to scale with its original aspect ratio
-            padding-bottom:1.25rem;
+            width: 30%;
+            padding-bottom: 1.25rem;
         }
     }
 }

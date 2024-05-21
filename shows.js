@@ -40,14 +40,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         showElement.innerHTML = `
             <div class="show-details">
-                <p class="label">Date</p>
-                <p class="date">${show.date}</p>
-                <p class="label">Venue</p>
-                <p class="venue">${show.venue}</p>
-                <p class="label">Location</p>
-                <p class="location">${show.location}</p>
+                <div class="show-section">
+                    <p class="labels">Date</p>
+                    <p class="date">${show.date}</p>
+                </div>
+                <div class="show-section">
+                    <p class="labels">Venue</p>
+                    <p class="venue">${show.venue}</p>
+                </div>
+                <div class="show-section">
+                    <p class="labels">Location</p>
+                    <p class="location">${show.location}</p>
+                </div>
+                <div class="show-section">
+                    <button class="buy-tickets">Buy Tickets</button>
+                </div>
             </div>
-            <button class="buy-tickets">Buy Tickets</button>
         `;
 
         showsContainer.appendChild(showElement);
@@ -61,4 +69,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-renderComments(shows-section)
+renderComments(shows - section)

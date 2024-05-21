@@ -7,7 +7,6 @@ const comments = [
     { name: 'Isaac Tadesse', date: '10/20/2023', text: 'I can\'t stop listening. Every time I hear one of their songs - the vocals - it gives me goosebumps. Shivers straight down my spine. What a beautiful expression of creativity. Can\'t get enough.' }
 ];
 
-// const renderComments = () => {
 function renderComments(data) {
     commentsList.innerHTML = '';
     data.forEach(comment => {
@@ -17,7 +16,7 @@ function renderComments(data) {
 
         const avatarElement = document.createElement('img');
         avatarElement.classList.add('comment__avatar');
-        avatarElement.src = './assets/images/comment__avatar.jpg'; // Use a placeholder image or user avatar
+        avatarElement.src = './assets/images/comment__avatar.jpg'; 
 
         const contentElement = document.createElement('div');
         contentElement.classList.add('comment__content');
@@ -59,7 +58,7 @@ commentForm.addEventListener('submit', (event) => {
 
     const newComment = {
         name: nameInput.value,
-        date: new Date().toLocaleDateString(),  // Get current date
+        date: new Date().toLocaleDateString(), 
         text: commentInput.value
     };
 
