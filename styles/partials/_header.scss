@@ -28,7 +28,7 @@
 
     &__logo {
         text-decoration: none;
-        color: $white; 
+        color: $white;
         @include responsive-text(1.5rem);
     }
 }
@@ -56,6 +56,16 @@
 .nav__li {
     text-align: center;
     width: 50%;
-    padding-bottom: 10rem;
+    padding-bottom: 1rem;
+    @include tablet {
+        padding-top: 36px;
+    }
+}
 
+.nav__li--active {
+    border-bottom: solid 2px #FFFFFF;
+
+    @include tablet {
+        padding-top: 36px;
+    }
 }

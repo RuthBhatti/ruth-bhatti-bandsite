@@ -71,6 +71,10 @@ h1 {
     padding-bottom: 1.25rem;
     border-bottom: .0625rem solid #ddd;
     margin-bottom: 1.25rem;
+
+.show:hover {
+        background-color: gray;
+    }
 }
 
 .labels {

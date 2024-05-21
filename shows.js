@@ -69,4 +69,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-renderComments(shows - section)
+renderComments(shows-section)

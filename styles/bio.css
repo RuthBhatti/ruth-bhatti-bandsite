@@ -216,7 +216,21 @@
 .nav__li {
   text-align: center;
   width: 50%;
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  .nav__li {
+    padding-top: 36px;
+  }
+}
+
+.nav__li--active {
+  border-bottom: solid 2px #FFFFFF;
+}
+@media (min-width: 48rem) {
+  .nav__li--active {
+    padding-top: 36px;
+  }
 }
 
 .hero {
