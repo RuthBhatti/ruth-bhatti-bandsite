@@ -229,7 +229,7 @@
 }
 @media (min-width: 48rem) {
   .nav__li--active {
-    padding-top: 36px;
+    padding-top: 3rem;
   }
 }
 
@@ -262,19 +262,18 @@
   }
 }
 
-.title__hero__show {
-  font-size: 600;
+h1 {
+  margin-bottom: 1.25rem;
+  color: #fff;
+  font-size: 2rem;
+  overflow-wrap: break-word;
+  font-weight: normal;
 }
 
 .shows__music-header {
   color: #FFFFFF;
   font-weight: 500;
   padding-bottom: 1rem;
-}
-
-h1 {
-  color: #FFFFFF;
-  font-size: 2rem;
 }
 
 .band__image {
