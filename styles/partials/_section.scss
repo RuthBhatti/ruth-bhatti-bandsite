@@ -8,7 +8,15 @@
 
 .section-about__image {
     width: 90%;
-    padding-left: 3.125rem;
+    padding-left: 2rem;
+
+    @include tablet {
+        padding-left: 5rem;
+    }
+
+    @include desktop {
+        padding-left: 11rem;
+    }
 }
 
 .section__tow {
@@ -24,33 +32,45 @@
 }
 
 .section-about {
-    padding: 0 2rem;
+    // padding: 0 2rem;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     font-weight: 600;
 
     &__header {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
+        padding-left: 1.875rem;
         font-weight: 600;
+
+        @include desktop {
+            padding: 0 5rem;
+        }
     }
 
     &__quote {
         width: 90%;
-        padding-left: 3.125rem;
+        padding-left: 2rem;
         margin-top: 1rem;
-        margin-bottom: 5rem;
         display: flex;
         font-family: Avenir;
         font-weight: 400;
-        line-height: 3rem;
-        font-size: 2rem;
+        line-height: 2rem;
+        font-size: 1.2rem;
+
+        @include tablet {
+            padding-left: 5rem;
+        }
+
+        @include desktop {
+            padding-left: 11rem
+        }
     }
 }
 
 .band-info__description {
-    padding: 0.9375rem;
+    padding-top: 0.9375rem;
     font-size: medium;
 }
 
@@ -93,12 +113,19 @@
 }
 
 .bees-keens__section {
-    padding-left: 1rem;
+    // padding-left: .5rem;
     font-size: 1.5rem;
     font-weight: 600;
+
+    // @include tablet {
+    //     padding-left: 2.5rem;
+    // }
 }
 
 .second__section {
-    padding: 2.1875rem;
+    padding: 2.1875rem 5rem;
 
+    @include desktop {
+        padding: 5rem 11rem;
+    }
 }

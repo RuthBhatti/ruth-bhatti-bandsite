@@ -11,6 +11,10 @@
     display: flex;
     align-items: center;
     padding-left: 1.875rem;
+
+    @include desktop {
+        padding-left: 5rem
+    }
 }
 
 .show_hero {
@@ -26,7 +30,8 @@
     @include desktop {
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
+        padding-left: 5.8rem;
     }
 }
 

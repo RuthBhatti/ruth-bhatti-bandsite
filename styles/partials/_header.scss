@@ -12,6 +12,12 @@
         font-weight: 2rem;
         align-items: center;
     }
+    @include desktop{
+        padding: 0 5rem;
+        display: flex;
+        font-weight: 2rem;
+        align-items: center;
+    }
 }
 
 .container {
