@@ -12,16 +12,9 @@
 .shows__container{
     flex: 1
 }
-// .date,
-// .venue,
-// .location,
-// .buy-tickets {
-//     width: 100%;
-// }
 
 .shows {
     margin: 1.5rem;
-
 
     @include desktop {
         display: flex;
@@ -45,7 +38,8 @@
         display: inline-block;
         vertical-align: middle;
         margin-right: 2rem;
-        padding: 1rem 4.5rem;    }
+        padding: 1rem 4.5rem;
+    }
 }
 
 .show__up {
@@ -54,11 +48,8 @@
     text-transform: uppercase;
     color: #666;
 
-
     @include tablet {
         display: flex;
-        // gap: 14rem;
-        // margin-left: 4.5rem;
         text-transform: uppercase;
         padding-bottom: 1rem;
         justify-content: unset;
@@ -66,13 +57,10 @@
 
     @include desktop {
         display: flex;
-        // gap: 25rem;
         vertical-align: baseline;
-        // margin-right: 24rem;
         padding: 2rem 0rem;
     }
 }
-
 
 .show {
     padding-bottom: 1.25rem;
@@ -83,8 +71,12 @@
         width: 25%;
     }
 
-    .show:hover {
-        background-color: gray;
+    &:hover {
+        background-color: #FAFAFA;
+    }
+
+    &.selected {
+        background-color: #E1E1E1;
     }
 }
 
