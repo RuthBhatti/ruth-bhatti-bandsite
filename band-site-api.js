@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 class BandSiteApi {
     constructor(apiKey) {
         this.apiKey = apiKey;
@@ -8,11 +6,7 @@ class BandSiteApi {
 
     async postComment(comment) {
         try {
-            const response = await axios.post(`${this.baseUrl}comments`, comment, {
-                headers: {
-                    'Authorization': `Bearer ${this.apiKey}`
-                }
-            });
+            const response = await axios.post(`${this.baseUrl}comments?api_key=${this.apiKey}`, comment);
             return response.data;
         } catch (error) {
             console.error('Error posting comment:', error);
@@ -21,11 +15,7 @@ class BandSiteApi {
 
     async getComments() {
         try {
-            const response = await axios.get(`${this.baseUrl}comments`, {
-                headers: {
-                    'Authorization': `Bearer ${this.apiKey}`
-                }
-            });
+            const response = await axios.get(`${this.baseUrl}comments?api_key=${this.apiKey}`);
             return response.data.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
         } catch (error) {
             console.error('Error fetching comments:', error);
@@ -34,11 +24,7 @@ class BandSiteApi {
 
     async getShows() {
         try {
-            const response = await axios.get(`${this.baseUrl}shows`, {
-                headers: {
-                    'Authorization': `Bearer ${this.apiKey}`
-                }
-            });
+            const response = await axios.get(`${this.baseUrl}shows?api_key=${this.apiKey}`);
             return response.data;
         } catch (error) {
             console.error('Error fetching shows:', error);
@@ -47,11 +33,7 @@ class BandSiteApi {
 
     async likeComment(commentId) {
         try {
-            const response = await axios.put(`${this.baseUrl}comments/${commentId}/like`, null, {
-                headers: {
-                    'Authorization': `Bearer ${this.apiKey}`
-                }
-            });
+            const response = await axios.put(`${this.baseUrl}comments/${commentId}/like?api_key=${this.apiKey}`,);
             return response.data;
         } catch (error) {
             console.error('Error liking comment:', error);
@@ -60,11 +42,7 @@ class BandSiteApi {
 
     async deleteComment(commentId) {
         try {
-            const response = await axios.delete(`${this.baseUrl}comments/${commentId}`, {
-                headers: {
-                    'Authorization': `Bearer ${this.apiKey}`
-                }
-            });
+            const response = await axios.delete(`${this.baseUrl}comments/${commentId}?api_key=${this.apiKey}`,);
             return response.data;
         } catch (error) {
             console.error('Error deleting comment:', error);

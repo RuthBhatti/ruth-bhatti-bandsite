@@ -1,15 +1,20 @@
 import BandSiteApi from './band-site-api.js';
 
 // API key
-const apiKey = 'c5744128-f754-4ef7-9732-fbe842a0a47c';
+const apiKey = 'c592ebb9-90cf-4409-8420-b7e1cb9e748d';
 const api = new BandSiteApi(apiKey);
 
 const commentForm = document.getElementById('commentForm');
 const commentsList = document.getElementById('commentsList');
 
+// Define the loadComments function
 async function loadComments() {
-    const comments = await api.getComments();
-    renderComments(comments);
+    try {
+        const comments = await api.getComments();
+        renderComments(comments);
+    } catch (error) {
+        console.error('Error loading comments:', error);
+    }
 }
 
 async function addComment(event) {
@@ -23,11 +28,15 @@ async function addComment(event) {
         comment: commentInput.value
     };
 
-    await api.postComment(newComment);
-    loadComments();
+    try {
+        await api.postComment(newComment);
+        loadComments();
 
-    nameInput.value = '';
-    commentInput.value = '';
+        nameInput.value = '';
+        commentInput.value = '';
+    } catch (error) {
+        console.error('Error adding comment:', error);
+    }
 }
 
 function renderComments(comments) {
