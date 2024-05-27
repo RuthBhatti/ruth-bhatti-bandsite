@@ -22,10 +22,15 @@
 
 .footer {
   text-align: justify;
-  padding: 1.5625rem;
+  padding: 1em;
   font-size: 0.8125rem;
   background-color: #323232;
   color: #FFFFFF;
+}
+@media (min-width: 80rem) {
+  .footer {
+    padding: 5rem;
+  }
 }
 .footer__logo2 {
   display: none;
@@ -125,31 +130,40 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 1rem;
+  padding: 1.875rem;
   background-color: #FAFAFA;
+}
+@media (min-width: 48rem) {
+  .gallery {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 80rem) {
+  .gallery {
+    padding: 1rem 5rem;
+  }
 }
 .gallery .gallery__text {
   text-align: left;
   width: 100%;
   margin-bottom: 1.25rem;
   font-size: 2.25rem;
-  padding-left: 1.5625rem;
 }
 .gallery img {
   width: 90%;
-  transition: filter 0.3s;
+  transition: filter 0.3s, background-color 0.3s;
   max-width: 33.125rem;
-  padding: inherit;
+  padding: 0.3125rem;
 }
 .gallery img:hover {
-  filter: grayscale(0%);
+  filter: grayscale(20%);
+  background-color: #AFAFAF;
 }
 
 @media (min-width: 48rem) {
   .gallery img {
     width: 30%;
-    padding-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
   }
 }
 .background-img {
@@ -164,6 +178,14 @@
   .header {
     display: flex;
     padding: 0;
+    font-weight: 2rem;
+    align-items: center;
+  }
+}
+@media (min-width: 80rem) {
+  .header {
+    padding: 0 5rem;
+    display: flex;
     font-weight: 2rem;
     align-items: center;
   }
@@ -229,7 +251,7 @@
 }
 @media (min-width: 48rem) {
   .nav__li--active {
-    padding-top: 36px;
+    padding-top: 3rem;
   }
 }
 
@@ -242,6 +264,11 @@
   display: flex;
   align-items: center;
   padding-left: 1.875rem;
+}
+@media (min-width: 80rem) {
+  .hero {
+    padding-left: 5rem;
+  }
 }
 
 .show_hero {
@@ -258,23 +285,22 @@
   .show_hero {
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-left: 5.8rem;
   }
 }
 
-.title__hero__show {
-  font-size: 600;
+h1 {
+  margin-bottom: 1.25rem;
+  color: #fff;
+  font-size: 2rem;
+  overflow-wrap: break-word;
+  font-weight: normal;
 }
 
 .shows__music-header {
   color: #FFFFFF;
   font-weight: 500;
   padding-bottom: 1rem;
-}
-
-h1 {
-  color: #FFFFFF;
-  font-size: 2rem;
 }
 
 .band__image {
@@ -295,7 +321,17 @@ h1 {
 
 .section-about__image {
   width: 90%;
-  padding-left: 3.125rem;
+  padding-left: 2rem;
+}
+@media (min-width: 48rem) {
+  .section-about__image {
+    padding-left: 5rem;
+  }
+}
+@media (min-width: 80rem) {
+  .section-about__image {
+    padding-left: 11rem;
+  }
 }
 
 .section__tow {
@@ -311,31 +347,45 @@ h1 {
 }
 
 .section-about {
-  padding: 0 2rem;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   font-weight: 600;
 }
 .section-about__header {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  padding-left: 1.875rem;
   font-weight: 600;
+}
+@media (min-width: 80rem) {
+  .section-about__header {
+    padding: 0 5rem;
+  }
 }
 .section-about__quote {
   width: 90%;
-  padding-left: 3.125rem;
+  padding-left: 2rem;
   margin-top: 1rem;
-  margin-bottom: 5rem;
   display: flex;
   font-family: Avenir;
   font-weight: 400;
-  line-height: 3rem;
-  font-size: 2rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 48rem) {
+  .section-about__quote {
+    padding-left: 5rem;
+  }
+}
+@media (min-width: 80rem) {
+  .section-about__quote {
+    padding-left: 11rem;
+  }
 }
 
 .band-info__description {
-  padding: 0.9375rem;
+  padding-top: 0.9375rem;
   font-size: medium;
 }
 
@@ -371,13 +421,23 @@ h1 {
 }
 
 .bees-keens__section {
-  padding-left: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .second__section {
-  padding: 2.1875rem;
+  padding: 2.1875rem 5rem;
+}
+@media (min-width: 80rem) {
+  .second__section {
+    padding: 5rem 11rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .comments {
+    padding: 0 2.8rem;
+  }
 }
 
 .comments__section {
@@ -396,9 +456,14 @@ h1 {
 
 .comments__header {
   font-size: 1.5rem;
-  margin-bottom: 1em;
   text-align: left;
-  padding: 1.25rem 1.25rem;
+  padding: 1.25rem 2rem;
+}
+@media (min-width: 80rem) {
+  .comments__header {
+    font-size: 1.5rem;
+    padding: 1.25rem 5rem;
+  }
 }
 
 .comments__form-container {
@@ -406,8 +471,13 @@ h1 {
   align-items: flex-start;
   gap: 1em;
   margin-bottom: 2em;
-  padding-left: 1.125rem;
+  padding-left: 2rem;
   padding-right: 2.8rem;
+}
+@media (min-width: 80rem) {
+  .comments__form-container {
+    padding-right: 8rem;
+  }
 }
 
 .comments__avatar {
@@ -451,14 +521,25 @@ h1 {
   border-radius: 0.3125rem;
   cursor: pointer;
 }
+@media (min-width: 48rem) {
+  .comments__button {
+    width: 25%;
+    align-self: flex-end;
+    width: auto;
+  }
+}
 
 .comments__button:hover {
   background-color: #000000;
 }
 
 .comments__list {
-  padding-top: 1em;
   padding: 1rem 1.875rem 10rem;
+}
+@media (min-width: 80rem) {
+  .comments__list {
+    padding: 0 8rem 5rem 0rem;
+  }
 }
 
 .comment {
@@ -482,8 +563,15 @@ h1 {
 
 .comment__name {
   font-size: 0.8125rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
+}
+@media (min-width: 80rem) {
+  .comment__name {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    margin: 0;
+  }
 }
 
 .comment__date {
@@ -495,6 +583,7 @@ h1 {
 .comment__text {
   margin: 0.5em 0 0 0;
   font-size: 0.8125rem;
+  padding-bottom: 1rem;
 }
 
 .comment__header {
@@ -502,6 +591,10 @@ h1 {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.625rem;
+}
+
+.comment__delete-button {
+  margin: 0 0.2rem;
 }
 
 body {

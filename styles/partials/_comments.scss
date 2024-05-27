@@ -1,6 +1,12 @@
 @use "./mixins" as *;
 @use "./variables" as *;
 
+.comments {
+    @include desktop {
+        padding: 0 2.8rem;
+    }
+}
+
 .comments__section {
     display: flex;
     margin-right: 2rem;
@@ -16,9 +22,13 @@
 
 .comments__header {
     font-size: $font-size;
-    margin-bottom: 1em;
     text-align: left;
-    padding: 1.25rem 1.25rem;
+    padding: 1.25rem 2rem;
+
+    @include desktop {
+        font-size: 1.5rem;
+        padding: 1.25rem 5rem;
+    }
 }
 
 .comments__form-container {
@@ -26,8 +36,12 @@
     align-items: flex-start;
     gap: 1em;
     margin-bottom: 2em;
-    padding-left: 1.125rem;
+    padding-left: 2rem;
     padding-right: 2.8rem;
+
+    @include desktop {
+        padding-right: 8rem;
+    }
 }
 
 .comments__avatar {
@@ -70,6 +84,13 @@
     border: none;
     border-radius: .3125rem;
     cursor: pointer;
+
+    @include tablet {
+        width: 25%;
+        align-self: flex-end; 
+        width: auto;
+    }
+
 }
 
 .comments__button:hover {
@@ -77,8 +98,12 @@
 }
 
 .comments__list {
-    padding-top: 1em;
     padding: 1rem 1.875rem 10rem;
+
+    @include desktop {
+        padding: 0 8rem 5rem 0rem;
+
+    }
 }
 
 .comment {
@@ -102,8 +127,14 @@
 
 .comment__name {
     font-size: $font-size-body;
-    font-weight: $font-weight-body;
+    font-weight: $subheader-font-weight;
     margin: 0;
+
+    @include desktop {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        margin: 0;
+    }
 }
 
 .comment__date {
@@ -115,6 +146,7 @@
 .comment__text {
     margin: 0.5em 0 0 0;
     font-size: $body-text-size;
+    padding-bottom: 1rem;
 }
 
 .comment__header {
@@ -122,4 +154,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: .625rem;
+}
+
+.comment__delete-button {
+    margin: 0 .2rem;
 }

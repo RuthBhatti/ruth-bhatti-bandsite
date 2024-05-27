@@ -58,15 +58,20 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
         `;
 
+        showElement.addEventListener('click', function () {
+            document.querySelectorAll('.show').forEach(item => item.classList.remove('selected'));
+            showElement.classList.add('selected');
+        });
+
         showsContainer.appendChild(showElement);
     });
 
     const buttons = document.querySelectorAll('.buy-tickets');
 
     buttons.forEach(button => {
-        button.addEventListener('click', function () {
+        button.addEventListener('click', function (event) {
+            event.stopPropagation(); 
             alert('Tickets are not yet available.');
         });
     });
 });
-renderComments(shows-section)

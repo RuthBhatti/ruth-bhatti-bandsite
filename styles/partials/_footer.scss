@@ -7,10 +7,14 @@
 
 .footer {
     text-align: justify;
-    padding: 1.5625rem;
+    padding: 1em;
     font-size: $font-size-body;
     background-color: $bandSite-Black;
     color: $white;
+
+    @include desktop {
+        padding: 5rem;
+    }
 
     &__logo2 {
         display: none;
