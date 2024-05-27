@@ -63,9 +63,7 @@
 }
 
 .show {
-    padding-bottom: 1.25rem;
     border-bottom: .0625rem solid #ddd;
-    margin-bottom: 1.25rem;
 
     &-section {
         width: 25%;
@@ -141,6 +139,7 @@
         align-items: baseline;
         margin: auto;
         justify-content: space-around;
+        padding: 1rem 0;
     }
 }
 

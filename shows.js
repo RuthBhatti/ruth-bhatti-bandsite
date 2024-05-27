@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     buttons.forEach(button => {
         button.addEventListener('click', function (event) {
-            event.stopPropagation(); // Prevent the click event from propagating to the show element
+            event.stopPropagation(); 
             alert('Tickets are not yet available.');
         });
     });

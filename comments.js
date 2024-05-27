@@ -1,13 +1,11 @@
 import BandSiteApi from './band-site-api.js';
 
-// API key
 const apiKey = 'c592ebb9-90cf-4409-8420-b7e1cb9e748d';
 const api = new BandSiteApi(apiKey);
 
 const commentForm = document.getElementById('commentForm');
 const commentsList = document.getElementById('commentsList');
 
-// Define the loadComments function
 async function loadComments() {
     try {
         const comments = await api.getComments();
@@ -18,7 +16,7 @@ async function loadComments() {
 }
 
 async function addComment(event) {
-    event.preventDefault();  // Prevent the form from refreshing the page
+    event.preventDefault(); 
 
     const nameInput = document.getElementById('name');
     const commentInput = document.getElementById('comment');

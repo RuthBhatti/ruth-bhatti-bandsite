@@ -2,21 +2,9 @@
 @use "./font" as *;
 @use "./mixins" as *;
 
-$breakpoint-tablet: 48rem;
-$breakpoint-desktop: 80rem;
-
-$bandSite-Black: #323232;
-$silver: #AFAFAF;
-$white: #FFFFFF;
-
-$BandSite-DarkBlack: #000000;
-$Mercury: #E1E1E1;
-$Alabaster: #FAFAFA;
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-around;
     padding: 1.875rem;
     background-color: $Alabaster;
 
@@ -33,17 +21,17 @@ $Alabaster: #FAFAFA;
         width: 100%;
         margin-bottom: 1.25rem;
         font-size: 2.25rem;
-        // padding-left: 1.5625rem;
     }
 
     img {
         width: 90%;
-        transition: filter 0.3s;
+        transition: filter 0.3s, background-color 0.3s;
         max-width: 33.125rem;
-        // padding: inherit;
+        padding: 0.3125rem;
 
         &:hover {
-            filter: grayscale(5%);
+            filter: grayscale(20%);
+            background-color: $silver;
         }
     }
 }
@@ -52,7 +40,7 @@ $Alabaster: #FAFAFA;
     .gallery {
         img {
             width: 30%;
-            padding-bottom: 1.25rem;
+            padding-bottom: .5rem;
         }
     }
 }
