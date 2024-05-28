@@ -1,39 +1,21 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const shows = [
-        {
-            date: 'Mon Sept 09 2024',
-            venue: 'Ronald Lane',
-            location: 'San Francisco, CA'
-        },
-        {
-            date: 'Tue Sept 17 2024',
-            venue: 'Pier 3 East',
-            location: 'San Francisco, CA'
-        },
-        {
-            date: 'Sat Oct 12 2024',
-            venue: 'View Lounge',
-            location: 'San Francisco, CA'
-        },
-        {
-            date: 'Sat Nov 16 2024',
-            venue: 'Hyatt Agency',
-            location: 'San Francisco, CA'
-        },
-        {
-            date: 'Fri Nov 29 2024',
-            venue: 'Moscow Center',
-            location: 'San Francisco, CA'
-        },
-        {
-            date: 'Wed Dec 18 2024',
-            venue: 'Press Club',
-            location: 'San Francisco, CA'
-        }
-    ];
+import ShowsApi from './build-shows-page-api.js';
+
+document.addEventListener('DOMContentLoaded', async function () {
+    const apiKey = 'c592ebb9-90cf-4409-8420-b7e1cb9e748d';  // Use the provided API key
+    const api = new ShowsApi(apiKey);
 
     const showsContainer = document.querySelector('.shows-section');
 
+    // Fetch the shows data from the API
+    const shows = await api.getShows();
+
+    // Helper function to format date
+    const formatDate = (timestamp) => {
+        const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+        return new Date(timestamp).toLocaleDateString('en-US', options);
+    };
+
+    // Populate the shows on the page
     shows.forEach(show => {
         const showElement = document.createElement('div');
         showElement.classList.add('show');
@@ -42,18 +24,18 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="show-details">
                 <div class="show-section">
                     <p class="labels">Date</p>
-                    <p class="date">${show.date}</p>
+                    <p class="date">${formatDate(show.date)}</p>
                 </div>
                 <div class="show-section">
                     <p class="labels">Venue</p>
-                    <p class="venue">${show.venue}</p>
+                    <p class="venue">${show.place}</p>
                 </div>
                 <div class="show-section">
                     <p class="labels">Location</p>
                     <p class="location">${show.location}</p>
                 </div>
                 <div class="show-section">
-                    <button class="buy-tickets">Buy Tickets</button>
+                    <button class="buy-tickets">Buy Tickets</button>    
                 </div>
             </div>
         `;
@@ -75,3 +57,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+// getShows();
