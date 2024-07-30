@@ -1,5 +1,5 @@
 @use "./mixins" as *;
-@use "./variables" as*;
+@use "./variables" as *;
 @use "./font" as *;
 
 .band__image {
@@ -50,20 +50,17 @@
 
     &__quote {
         width: 90%;
-        padding-left: 2rem;
-        margin-top: 1rem;
-        display: flex;
-        font-family: Avenir;
-        font-weight: 400;
-        line-height: 2rem;
-        font-size: 1.2rem;
+        font-size: 0.8125rem;
+        line-height: 1.125rem;
+        font-family: "avenir-bold";
+        padding: 0.25rem 0rem 1rem 1.8rem;
 
         @include tablet {
             padding-left: 5rem;
         }
 
         @include desktop {
-            padding-left: 11rem
+            padding-left: 11rem;
         }
     }
 }
@@ -81,7 +78,6 @@
     font-weight: 600;
     font-size: medium;
     width: 20%;
-
 }
 
 .small-text {
@@ -114,11 +110,14 @@
 .bees-keens__section {
     font-size: 1.5rem;
     font-weight: 600;
-
 }
 
 .second__section {
-    padding: 2.1875rem 5rem;
+    padding: 1rem;
+
+    @include tablet {
+        padding: 1.8rem;
+    }
 
     @include desktop {
         padding: 5rem 11rem;
