@@ -1,21 +1,18 @@
 import ShowsApi from './build-shows-page-api.js';
 
 document.addEventListener('DOMContentLoaded', async function () {
-    const apiKey = 'c592ebb9-90cf-4409-8420-b7e1cb9e748d';  // Use the provided API key
+    const apiKey = 'c592ebb9-90cf-4409-8420-b7e1cb9e748d';  
     const api = new ShowsApi(apiKey);
 
     const showsContainer = document.querySelector('.shows-section');
 
-    // Fetch the shows data from the API
     const shows = await api.getShows();
 
-    // Helper function to format date
     const formatDate = (timestamp) => {
         const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
         return new Date(timestamp).toLocaleDateString('en-US', options);
     };
 
-    // Populate the shows on the page
     shows.forEach(show => {
         const showElement = document.createElement('div');
         showElement.classList.add('show');
@@ -57,4 +54,3 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
     });
 });
-// getShows();
