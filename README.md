@@ -7,9 +7,13 @@ BandSite is a visually captivating and responsive website for a band, developed 
 ## 🚀 Features
 
  **👤 Biography Section:** Provides detailed information about the band members and their journey.
+ 
  **🎤 Shows Section:** Lists upcoming shows and events with dates and venues.
+ 
  **📸 Photo Gallery:** Showcases high-quality images of the band and their performances.
+ 
  **💬 Commenting System:** Allows users to leave comments and engage with the band.
+ 
 
 ## 🛠️ Getting Started
 
