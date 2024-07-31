@@ -48,15 +48,6 @@ The development server will start on `http://localhost:3000`.
 - **CSS:** For additional styling.
 - **JavaScript:** For interactive elements and dynamic content.
 
-## 📸 Screenshots
-
-![BandSite Screenshot 1](/src/assets/images/bandsite/Biography-Mobile.png)
-![BandSite Screenshot 2](/src/assets/images/bandsite/Biography-Tablet.png)
-![BandSite Screenshot 3](/src/assets/images/bandsite/Biography-Desktop.png)
-![BandSite Screenshot 4](/src/assets/images/bandsite/Shows-Mobile.png)
-![BandSite Screenshot 5](/src/assets/images/bandsite/Shows-Tablet.png)
-![BandSite Screenshot 6](/src/assets/images/bandsite/Shows-Desktop.png)
-
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
