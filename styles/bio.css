@@ -169,7 +169,6 @@
 }
 .gallery img:hover {
   filter: grayscale(20%);
-  background-color: #AFAFAF;
 }
 
 @media (min-width: 48rem) {
@@ -479,6 +478,12 @@ h1 {
     padding-right: 2rem;
   }
 }
+@media (min-width: 64rem) {
+  .comments__section {
+    margin-right: 10rem;
+    margin-left: 1rem;
+  }
+}
 
 .comments__header {
   font-size: 1.5rem;
@@ -532,6 +537,11 @@ h1 {
   margin-bottom: 1em;
   border: 0.0625rem solid #E1E1E1;
   border-radius: 0.3125rem;
+  background-color: #fafafa;
+}
+
+.comments__textarea {
+  height: 10rem;
 }
 
 .textarea {
@@ -561,6 +571,11 @@ h1 {
 
 .comments__list {
   padding: 1rem 1.875rem 10rem;
+}
+@media (min-width: 48rem) {
+  .comments__list {
+    padding: 0;
+  }
 }
 @media (min-width: 64rem) {
   .comments__list {

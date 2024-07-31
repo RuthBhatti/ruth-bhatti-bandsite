@@ -18,6 +18,11 @@
         padding-left: 3rem;
         padding-right: 2rem;
     }
+
+    @include desktop {
+        margin-right: 10rem;
+        margin-left: 1rem;
+    }
 }
 
 .comments__header {
@@ -70,6 +75,11 @@
     margin-bottom: 1em;
     border: .0625rem solid $Mercury;
     border-radius: .3125rem;
+    background-color: #fafafa;
+}
+
+.comments__textarea {
+    height: 10rem;
 }
 
 .textarea {
@@ -87,7 +97,7 @@
 
     @include tablet {
         width: 25%;
-        align-self: flex-end; 
+        align-self: flex-end;
         width: auto;
     }
 
@@ -99,6 +109,10 @@
 
 .comments__list {
     padding: 1rem 1.875rem 10rem;
+
+    @include tablet {
+        padding: 0;
+    }
 
     @include desktop {
         padding: 0 10.5rem;
